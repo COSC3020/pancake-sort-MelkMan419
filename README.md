@@ -30,3 +30,14 @@ What is the asymptotic runtime ($\Theta$) of your algorithm in terms of the
 number of comparisons? What is it in terms of the number of flips? Add your
 answer to this markdown file.
 
+Number of Comparisons:
+In the worst case, the algorithm performs n comparisons to find the maximum element in the unsorted portion of the array in each iteration. This is because it needs to compare each element with the current maximum.
+Since we perform this operation for n elements and potentially iterate n times (in the worst case), the total number of comparisons is Θ(n^2).
+
+Number of Flips:
+Each flip operation reverses a portion of the array, which has a time complexity proportional to the number of elements being flipped.
+In the worst case, the algorithm performs two flips for each iteration, and it potentially iterates n times.
+Therefore, the total number of flips is Θ(n^2).
+
+So the overall asymptotic runtime complexity of the pancake sorting algorithm is Θ(n^2) in terms of both the number of comparisons and the number of flips.
+
