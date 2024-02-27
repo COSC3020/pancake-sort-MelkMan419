@@ -1,3 +1,4 @@
+[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/-m0g1A8z)
 # Pancake Sort
 
 There is an abstract data type (ADT) called a *pancake array*, which provides
@@ -28,4 +29,13 @@ element into its correct position.
 What is the asymptotic runtime ($\Theta$) of your algorithm in terms of the
 number of comparisons? What is it in terms of the number of flips? Add your
 answer to this markdown file.
+
+Number of Flips per Iteration:
+In each iteration, we perform at most two flips:
+One flip to move the maximum element to the beginning of the unsorted portion.
+Another flip to move the maximum element to the end of the unsorted portion (placing it in its correct position).
+Both flips involve reversing a portion of the array, which can be done in linear time.
+So the number of flips per iteration is constant, not linear.
+
+Number of Iterations:Since the number of comparisons per iteration is O(n) and the number of iterations is O(n), the total number of comparisons in the worst case is O(n^2).
 
