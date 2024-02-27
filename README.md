@@ -37,7 +37,5 @@ Another flip to move the maximum element to the end of the unsorted portion (pla
 Both flips involve reversing a portion of the array, which can be done in linear time.
 So the number of flips per iteration is constant, not linear.
 
-Number of Iterations:
-In the worst case, each iteration reduces the unsorted portion by one element.
-Therefore, the number of iterations is at most n, where n is the number of elements in the array. So it is just O(n)
+Number of Iterations:Since the number of comparisons per iteration is O(n) and the number of iterations is O(n), the total number of comparisons in the worst case is O(n^2).
 
